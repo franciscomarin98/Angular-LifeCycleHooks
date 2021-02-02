@@ -1,2 +1,9 @@
-<h1>Ciclo de vida de los LifeCycleHooks de Angular</h1>
+<p>Ciclo de vida de los LifeCycleHooks de Angular</p>
 <hr>
+
+<button (click)="mostrar = !mostrar">
+  {{ mostrar ? 'Ocultar':'Mostrar' }}
+</button>
+<app-page1 *ngIf="mostrar"></app-page1>
+
+
